@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+   <com.google.android.material.textfield.TextInputLayout
+       android:id="@+id/create_review_title_layout"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintLeft_toLeftOf="parent"
+       app:layout_constraintRight_toRightOf="parent"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:hint="@string/review_title_hint"
+       android:padding="5dp">
+       <com.google.android.material.textfield.TextInputEditText
+           android:id="@+id/create_review_title_input"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:inputType="textAutoComplete">
+       </com.google.android.material.textfield.TextInputEditText>
+   </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/create_review_location_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/review_location_hint"
+        android:padding="5dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/rating_layout"
+        app:layout_constraintTop_toBottomOf="@id/create_review_title_layout">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/create_review_location_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPostalAddress"
+            android:hint="@string/review_location_hint">
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/rating_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/create_review_location_layout"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/create_review_location_layout"
+        app:layout_constraintTop_toBottomOf="@id/create_review_title_layout">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/create_review_rating_input"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/review_rating_hint">
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/create_review_description_layout"
+        app:layout_constraintTop_toBottomOf="@id/create_review_location_layout"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/review_description_hint"
+        android:padding="5dp"
+        app:errorEnabled="true">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/create_review_description_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textAutoComplete">
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/add_review_image_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/create_review_description_layout"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_margin="15dp"
+
+        android:text="@string/insert_image_button">
+    </com.google.android.material.button.MaterialButton>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/create_review_author_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/new_author"
+        android:padding="5dp"
+        app:layout_constraintLeft_toRightOf="@id/add_review_image_button"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/create_review_description_layout">
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

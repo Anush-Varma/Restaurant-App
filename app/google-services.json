@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "416141540251",
+    "project_id": "restuarntapp-deaf4",
+    "storage_bucket": "restuarntapp-deaf4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:416141540251:android:4fe194e56f7f3b6820ff3e",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "416141540251-ip397pqtj7ufaj8a3kkpasu6ki1l6tba.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.myapplication",
+            "certificate_hash": "192850aea086d13b85a89b1130c20e1e32ee90bc"
+          }
+        },
+        {
+          "client_id": "416141540251-7un7qfb33csmib9vs02bjnjargmb9fnn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": ""
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "416141540251-7un7qfb33csmib9vs02bjnjargmb9fnn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home"
+        android:enabled="true"
+        android:icon="@drawable/home_icon"
+        android:title="@string/home_nav"/>
+    <item
+        android:id="@+id/restaurants"
+        android:enabled="true"
+        android:icon="@drawable/restaurant_icon"
+        android:title="@string/restaurants_nav"/>
+    <item
+        android:id="@+id/review"
+        android:enabled="true"
+        android:icon="@drawable/review_icon"
+        android:title="@string/review_nav"/>
+    <item
+        android:id="@+id/collections"
+        android:enabled="true"
+        android:icon="@drawable/collections_icon"
+        android:title="@string/collections_nav"/>
+
+</menu>
